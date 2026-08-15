@@ -13,6 +13,7 @@ const EXPECTED_BUNDLED_KEYS = [
 ];
 
 const EXPECTED_OPTIONAL_KEYS = [
+  "paperclipai/optional/comms/phone-team",
   "paperclipai/optional/content/content-machine",
 ];
 

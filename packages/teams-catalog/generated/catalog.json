@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "packageName": "@paperclipai/teams-catalog",
   "packageVersion": "0.1.0",
-  "generatedAt": "2026-06-04T18:03:41.262Z",
+  "generatedAt": "2026-08-15T06:39:32.001Z",
   "teams": [
     {
       "id": "paperclipai:bundled:company-defaults:core-exec-team",
@@ -374,6 +374,96 @@
       "trustLevel": "assets",
       "compatibility": "compatible",
       "contentHash": "sha256:74ddeaeb11805835a4a67fc4530b048ab7f8aa1dc7d2b80acea139a933d158d3"
+    },
+    {
+      "id": "paperclipai:optional:comms:phone-team",
+      "key": "paperclipai/optional/comms/phone-team",
+      "kind": "optional",
+      "category": "comms",
+      "slug": "phone-team",
+      "name": "Phone Team",
+      "description": "Optional communications team that staffs a voice front desk on Speko: a lead agent that sets up the phone line behind board approvals, answers and places disclosed calls, and files every call as a ticket with recording and transcript.",
+      "path": "catalog/optional/comms/phone-team",
+      "entrypoint": "TEAM.md",
+      "schema": "agentcompanies/v1",
+      "defaultInstall": false,
+      "recommendedForCompanyTypes": [
+        "startup",
+        "agency",
+        "services"
+      ],
+      "tags": [
+        "voice",
+        "phone",
+        "comms"
+      ],
+      "counts": {
+        "agents": 1,
+        "projects": 1,
+        "tasks": 0,
+        "routines": 1,
+        "localSkills": 0,
+        "catalogSkills": 1,
+        "externalSkillSources": 0
+      },
+      "rootAgentSlugs": [
+        "front-desk-lead"
+      ],
+      "agentSlugs": [
+        "front-desk-lead"
+      ],
+      "projectSlugs": [
+        "phone-operations"
+      ],
+      "requiredSkills": [
+        {
+          "type": "catalog",
+          "ref": "paperclipai/optional/comms/speko",
+          "agentSlugs": [],
+          "resolved": true,
+          "catalogSkillId": "paperclipai:optional:comms:speko",
+          "catalogSkillKey": "paperclipai/optional/comms/speko"
+        }
+      ],
+      "envInputs": [
+        {
+          "key": "SPEKO_API_KEY",
+          "agentSlug": "front-desk-lead",
+          "projectSlug": null,
+          "kind": "secret",
+          "requirement": "required"
+        }
+      ],
+      "sourceRefs": [],
+      "files": [
+        {
+          "path": "TEAM.md",
+          "kind": "team",
+          "sizeBytes": 1432,
+          "sha256": "09b1dfeca93a318646ffa91d7fac652b21892b12a5543a5f3a611139d0633064"
+        },
+        {
+          "path": "agents/front-desk-lead/AGENTS.md",
+          "kind": "agent",
+          "sizeBytes": 1510,
+          "sha256": "db3d8959f96f396c459e97bbf837357c31f9b3e828d6fa57d72d962d8bc5072e"
+        },
+        {
+          "path": "projects/phone-operations/PROJECT.md",
+          "kind": "project",
+          "sizeBytes": 385,
+          "sha256": "7b7c91109134ab413c1df490c7467bb375f0ea09f2c97d68866ae86e840282d1"
+        },
+        {
+          "path": "projects/phone-operations/tasks/work-the-call-queue/TASK.md",
+          "kind": "task",
+          "sizeBytes": 403,
+          "sha256": "8d03bbd815a546b2cd275330e92e4dfdba2255657d346dfe61fdf0d74641b532"
+        }
+      ],
+      "trustLevel": "markdown_only",
+      "compatibility": "compatible",
+      "contentHash": "sha256:98e89dd508c1974e0a0e0c69a3a818a57bec354472d23d7ffe9d6b382cfc7f20"
     },
     {
       "id": "paperclipai:optional:content:content-machine",
